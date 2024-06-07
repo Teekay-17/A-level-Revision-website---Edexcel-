@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+    <title>Guessing Game</title>
+</head>
+<body>
+
+    <h1>Guess the Number (1-10)</h1>
+    <p>Guess the correct number between 1 and 10. You have 3 chances.</p>
+
+    <label for="guess">Your Guess:</label>
+    <input type="number" id="guess" min="1" max="10">
+    <button onclick="checkGuess()">Submit Guess</button>
+
+    <p id="result"></p>
+
+    <button onclick="restartGame()">Restart Game</button>
+
+    <script>
+        let secretNumber, chances;
+
+        function startGame() {
+            // Generate a random number between 1 and 10
+            secretNumber = Math.floor(Math.random() * 10) + 1;
+            chances = 3;
+
+            const guessInput = document.getElementById('guess');
+            const resultText = document.getElementById('result');
+
+            guessInput.disabled = false;
+            guessInput.value = '';
+
+            resultText.textContent = '';
+            resultText.style.color = 'black';
+
+            const submitButton = document.querySelector('button');
+            submitButton.disabled = false;
+        }
+
+        function checkGuess() {
+            const guessInput = document.getElementById('guess');
+            const resultText = document.getElementById('result');
+
+            // Get the player's guess
+            const userGuess = parseInt(guessInput.value);
+
+            // Check if the guess is correct
+            if (userGuess === secretNumber) {
+                resultText.textContent = 'Congratulations! You guessed the correct number.';
+                resultText.style.color = 'green';
+                disableInputAndButton();
+            } else {
+                chances--;
+
+                if (chances > 0) {
+                    resultText.textContent = `Wrong guess! You have ${chances} ${chances === 1 ? 'chance' : 'chances'} left.`;
+                } else {
+                    resultText.textContent = `Game over! The correct number was ${secretNumber}.`;
+                    resultText.style.color = 'red';
+                    disableInputAndButton();
+                }
+            }
+            if ( userGuess<secretNumber){
+                resultText.textContent= `Wrong guess! My guess is larger. You have ${chances} ${chances === 1 ? 'chance' : 'chances'} left.`;
+                }
+                else{
+                    `Wrong guess! My guess is smaller. You have ${chances} ${chances === 1 ? 'chance' : 'chances'} left.`;
+                }
+        }
+
+        function disableInputAndButton() {
+            const guessInput = document.getElementById('guess');
+            const submitButton = document.querySelector('button');
+
+            guessInput.disabled = true;
+            submitButton.disabled = true;
+        }
+
+        function restartGame() {
+            startGame();
+        }
+
+        // Initialize the game on page load
+        startGame();
+    </script>
+
+</body>
+</html>

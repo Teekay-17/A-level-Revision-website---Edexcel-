@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>Simple I.T Quiz Game</h1>
+    <p>Answer the following questions:</p>
+
+    <script>
+        // Define the questions and correct answers
+        var questions = [
+            { question: "What is the unique identifier you get when you join a network called?", answer: "IP address" },
+            { question: "How do you idetify an ID in CSS?", answer: "#" },
+            { question: "What type of address has over 4.3 Billion unique values?", answer: "IPv6" },
+            { question: "What tag do you use to add javascript to an HTML file ?", answer: "<script>" },
+            { question: "What type of data is found inside speech marks?", answer: "string" },
+            // Add more questions as needed
+        ];
+
+        var score = 0;
+
+        // Function to ask a question and check the answer
+        function askQuestion(index) {
+            var userAnswer = prompt(questions[index].question);
+            if (userAnswer !== null) {
+                if (userAnswer.toLowerCase() === questions[index].answer.toLowerCase()) {
+                    alert("Correct!");
+                    score++;
+                } else {
+                    alert("Incorrect. The correct answer is: " + questions[index].answer);
+                }
+
+                // Ask the next question or display the final score
+                if (index < questions.length - 1) {
+                    askQuestion(index + 1);
+                } else {
+                    displayFinalScore();
+                }
+            }
+        }
+
+        // Function to display the final score
+        function displayFinalScore() {
+            alert("Quiz completed!\nYour final score is: " + score);
+            document.getElementById("quiz-container").innerHTML += "<p>Your final score is: " + score + "</p>";
+        }
+
+        // Start the quiz by asking the first question
+        askQuestion(0);
+    </script>
+</div>
+
+</body>
+</html>

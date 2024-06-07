@@ -1,0 +1,34 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>Multiple Choice Quiz</h1>
+<p>What is the capital of Switzerland?</p>
+<button id="a" class="choice" onclick="checkAnswer('a', false)">Zurich</button>
+<button id="b" class="choice" onclick="checkAnswer('b', false)">Geneva</button>
+<button id="c" class="choice" onclick="checkAnswer('c', true)">Bern</button>
+<button id="d" class="choice" onclick="checkAnswer('d', false)">Lausanne</button>
+<p id="result"></p>
+
+<script>
+    function checkAnswer(id, correct) {
+      var buttons = document.getElementsByClassName("choice");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+        if (buttons[i].id != id) {
+          buttons[i].style.color = "grey";
+        }
+      }
+      var result = document.getElementById("result");
+      if (correct) {
+        result.innerHTML = "Correct!";
+        result.style.color = "green";
+      } else {
+        result.innerHTML = "Incorrect!";
+        result.style.color = "red";
+      }
+    }
+    </script>
+</body>
+</html>

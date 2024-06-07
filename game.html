@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="I.T revision">
+        <title>Year12 I.T Revision</title>
+        <link rel="stylesheet" href="revision.css">
+        
+
+    </head>
+
+    <body>
+        <h1> I.T Revision Webpage</h1>
+        
+        <nav> 
+            <ul class="navi">
+                <li class="navilist"> <a href="index.html">Home</a> </li>
+                <li class="navilist"> <a href="page1.html">Page1</a> </li>
+                <li class="navilist"> <a href="page2.html">Page2</a> </li>
+                <li class="navilist"> <a href="game.html">Game</a> </li>
+                <li class="navilist"> <a href="Page 4.html">Videos</a> </li>
+                <li class="navilist"> <a href="page5.html">Form</a> </li>
+            </ul>
+        </nav>
+
+        <p>Guess the keyword! ( guess in capital letters)</p>
+
+            <p id="attempts"></p>
+             <p id="display">_ _ _ </p>
+            <button onclick=guessLetter()>guess a letter</button>
+            <p id="feedback"></p>
+       
+       <script>
+	        var word=["C","P","U"];
+	        var guessed=["_","_","_"];
+	        function guessLetter(){
+		        var counter=0;
+		        document.getElementById("feedback").innerHTML = " ";
+		        var letter=prompt("please enter a letter");
+		            for (let i = 0; i < word.length; i++) {
+			            if (letter==word[i]){
+				            guessed[i]=letter;
+				                        counter=1;
+				            }
+			            }
+    		if (counter==0){
+			    document.getElementById("feedback").innerHTML = "This letter is not in my word";
+				}
+            else{
+                document.getElementById("feedback").innerHTML="Well done!"
+            }
+	          
+           
+            document.getElementById("display").innerHTML = guessed.join(" ");
+	}
+        </script>
+
+    </body>
+</html>

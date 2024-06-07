@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="I.T revision">
+        <title>Year12 I.T Revision</title>
+        <link rel="stylesheet" href="revision.css">
+
+    </head>
+
+    <body>
+        <h1> I.T Revision Webpage</h1>
+
+        <nav> 
+            <ul class="navi">
+                <li class="navilist"> <a href="index.html">Home</a> </li>
+                <li class="navilist"> <a href="page1.html">Page1</a> </li>
+                <li class="navilist"> <a href="page2.html">Page2</a> </li>
+                <li class="navilist"> <a href="game.html">Game</a> </li>
+                <li class="navilist"> <a href="Page 4.html">Videos</a> </li>
+				<li class="navilist"> <a href="page5.html">Form</a> </li>
+            </ul>
+        </nav>
+        <h2> Page1 </h2>
+        
+        <article>
+            <p> Unit 1 Flash cards and notes</p>
+
+            <div class="blueflashcard" onclick="flashcard1()" id="card1">dynamic website</div>
+            <div class="blueflashcard" onclick="flashcard2()" id="card2">dynamic IP address</div>
+            <div class="blueflashcard" onclick="flashcard3()" id="card3">DNS</div>
+            <div class="blueflashcard" onclick="flashcard4()" id="card4">OSI model</div>
+            <div class="blueflashcard" onclick="flashcard5()" id="card5">RFID</div>
+            <div class="blueflashcard" onclick="flashcard6()" id="card6">embedded system</div>
+            <div class="blueflashcard" onclick="flashcard7()" id="card7">CPU</div>
+            <div class="blueflashcard" onclick="flashcard8()" id="card8">RAM</div>
+            <div class="blueflashcard" onclick="flashcard9()" id="card9">Drivers</div>
+            <div class="blueflashcard" onclick="flashcard10()" id="card10">OS</div>
+            <div class="blueflashcard" onclick="flashcard11()" id="card11">Application software</div>
+            <div class="blueflashcard" onclick="flashcard12()" id="card12">Formatting</div>
+            <div class="blueflashcard" onclick="flashcard13()" id="card13">Defragmentation</div>
+            <div class="blueflashcard" onclick="flashcard14()" id="card14">Compression</div>
+            <div class="blueflashcard" onclick="flashcard15()" id="card15">Backup</div>
+            <div class="blueflashcard" onclick="flashcard16()" id="card16">Copyright</div>
+
+
+
+
+
+
+
+
+
+        </article>
+
+        <script>
+            var counter=0;
+	
+            function flashcard1(){
+                
+                if (counter==0){
+                    document.getElementById("card1").innerHTML = "A website personalised for each user"; 
+                    document.getElementById("card1").style.background="green";
+                    document.getElementById("card1").style.fontSize="15px";
+                    document.getElementById("card1").style.fontWeight="normal";
+                    counter=1;
+                    }
+                else{
+                    document.getElementById("card1").innerHTML = "dynamic website";
+                    document.getElementById("card1").style.background="lightblue";
+                    document.getElementById("card1").style.fontSize="20px";
+                    document.getElementById("card1").style.fontWeight="bold";
+                    counter=0;
+                    }
+
+            }
+            function flashcard2(){
+                
+                if (counter==0){
+                    document.getElementById("card2").innerHTML = "An IP address that changes from time to time"; 
+                    document.getElementById("card2").style.background="green";
+                    document.getElementById("card2").style.fontSize="15px";
+                    document.getElementById("card2").style.fontWeight="normal";
+                    counter=1;
+                    }
+                else{
+                    document.getElementById("card2").innerHTML = "dynamic IP Address";
+                    document.getElementById("card2").style.background="lightblue";
+                    document.getElementById("card2").style.fontSize="20px";
+                    document.getElementById("card2").style.fontWeight="bold";
+                    counter=0;
+                    }
+
+            }
+            function flashcard3(){
+                
+                if (counter==0){
+                    document.getElementById("card3").innerHTML = "A Server that translates Domain names into Ip addresses"; 
+                    document.getElementById("card3").style.background="green";
+                    document.getElementById("card3").style.fontSize="15px";
+                    document.getElementById("card3").style.fontWeight="normal";
+                    counter=1;
+                    }
+                else{
+                    document.getElementById("card3").innerHTML = "DNS";
+                    document.getElementById("card3").style.background="lightblue";
+                    document.getElementById("card3").style.fontSize="20px";
+                    document.getElementById("card3").style.fontWeight="bold";
+                    counter=0;
+                    }   
+            
+                }
+            function flashcard4(){
+		
+		if (counter==0){
+			document.getElementById("card4").innerHTML = "Open System Interconnection model with 7 layers"; 
+			document.getElementById("card4").style.background="green";
+			document.getElementById("card4").style.fontSize="15px";
+			document.getElementById("card4").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card4").innerHTML = "OSI model";
+			document.getElementById("card4").style.background="lightblue";
+			document.getElementById("card4").style.fontSize="20px";
+			document.getElementById("card4").style.fontWeight="bold";
+			counter=0;
+			}  
+        }
+            function flashcard5(){
+		
+		if (counter==0){
+			document.getElementById("card5").innerHTML = "A type of NFC tech; operates using EM fields"; 
+			document.getElementById("card5").style.background="green";
+			document.getElementById("card5").style.fontSize="15px";
+			document.getElementById("card5").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card5").innerHTML = "RFID";
+			document.getElementById("card5").style.background="lightblue";
+			document.getElementById("card5").style.fontSize="20px";
+			document.getElementById("card5").style.fontWeight="bold";
+			counter=0;
+			}
+        }
+            function flashcard6(){
+		
+		if (counter==0){
+			document.getElementById("card6").innerHTML = "a microprocessor with software dedicated to a specific function"; 
+			document.getElementById("card6").style.background="green";
+			document.getElementById("card6").style.fontSize="15px";
+			document.getElementById("card6").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card6").innerHTML = "Embedded System";
+			document.getElementById("card6").style.background="lightblue";
+			document.getElementById("card6").style.fontSize="20px";
+			document.getElementById("card6").style.fontWeight="bold";
+			counter=0;
+			}
+        }
+            function flashcard7(){
+                if (counter==0){
+			document.getElementById("card7").innerHTML = "Component that interprets and executes commands from hardware to software"; 
+			document.getElementById("card7").style.background="green";
+			document.getElementById("card7").style.fontSize="15px";
+			document.getElementById("card7").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card7").innerHTML = "CPU";
+			document.getElementById("card7").style.background="lightblue";
+			document.getElementById("card7").style.fontSize="20px";
+			document.getElementById("card7").style.fontWeight="bold";
+			counter=0;
+			}
+            }
+            function flashcard8(){
+                if (counter==0){
+			document.getElementById("card8").innerHTML = "Random Access Memory, used as working memory as the processor can access it faster. It's Volatile."; 
+			document.getElementById("card8").style.background="green";
+			document.getElementById("card8").style.fontSize="15px";
+			document.getElementById("card8").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card8").innerHTML = "RAM";
+			document.getElementById("card8").style.background="lightblue";
+			document.getElementById("card8").style.fontSize="20px";
+			document.getElementById("card8").style.fontWeight="bold";
+			counter=0;
+			}
+            }
+            function flashcard9(){
+                if (counter==0){
+			document.getElementById("card9").innerHTML = "Component that interprets and executes commands from hardware to software software component that lets the operating system and a device communicate"; 
+			document.getElementById("card9").style.background="green";
+			document.getElementById("card9").style.fontSize="15px";
+			document.getElementById("card9").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card9").innerHTML = "Drivers";
+			document.getElementById("card9").style.background="lightblue";
+			document.getElementById("card9").style.fontSize="20px";
+			document.getElementById("card9").style.fontWeight="bold";
+			counter=0;
+			}
+
+
+        }
+            function flashcard10(){
+                if (counter==0){
+			document.getElementById("card10").innerHTML = "Software that supports a computer's basic functions and controls peripherals"; 
+			document.getElementById("card10").style.background="green";
+			document.getElementById("card10").style.fontSize="15px";
+			document.getElementById("card10").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card10").innerHTML = "OS";
+			document.getElementById("card10").style.background="lightblue";
+			document.getElementById("card10").style.fontSize="20px";
+			document.getElementById("card10").style.fontWeight="bold";
+			counter=0;
+	        }
+        }
+            function flashcard11(){
+                if (counter==0){
+			document.getElementById("card11").innerHTML = "Computer software designed to carry out specific tasks"; 
+			document.getElementById("card11").style.background="green";
+			document.getElementById("card11").style.fontSize="15px";
+			document.getElementById("card11").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card11").innerHTML = "Application Software";
+			document.getElementById("card11").style.background="lightblue";
+			document.getElementById("card11").style.fontSize="20px";
+			document.getElementById("card11").style.fontWeight="bold";
+			counter=0;
+			}
+        }
+            function flashcard12(){
+                if (counter==0){
+			document.getElementById("card12").innerHTML = "Prepares storage media for it's first use or otherwise make existing data unreadable by normal applications"; 
+			document.getElementById("card12").style.background="green";
+			document.getElementById("card12").style.fontSize="15px";
+			document.getElementById("card12").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card12").innerHTML = "Formatting";
+			document.getElementById("card12").style.background="lightblue";
+			document.getElementById("card12").style.fontSize="20px";
+			document.getElementById("card12").style.fontWeight="bold";
+			counter=0;
+			}
+        }
+            function flashcard13(){
+                if (counter==0){
+			document.getElementById("card13").innerHTML = "Utility that reorders fragments of data as close to each other as possible in a disk"; 
+			document.getElementById("card13").style.background="green";
+			document.getElementById("card13").style.fontSize="15px";
+			document.getElementById("card13").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card13").innerHTML = "Defragmentation";
+			document.getElementById("card13").style.background="lightblue";
+			document.getElementById("card13").style.fontSize="20px";
+			document.getElementById("card13").style.fontWeight="bold";
+			counter=0;
+			}
+        }
+            function flashcard14(){
+                if (counter==0){
+			document.getElementById("card14").innerHTML = "Utility that reduces repeated patterns of data by storing the first instance alongside how many times it occurs."; 
+			document.getElementById("card14").style.background="green";
+			document.getElementById("card14").style.fontSize="15px";
+			document.getElementById("card14").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card14").innerHTML = "Compression";
+			document.getElementById("card14").style.background="lightblue";
+			document.getElementById("card14").style.fontSize="20px";
+			document.getElementById("card14").style.fontWeight="bold";
+			counter=0;
+			}
+        }
+            function flashcard15(){
+                if (counter==0){
+			document.getElementById("card15").innerHTML = "Utility that creates copies of files and programs"; 
+			document.getElementById("card15").style.background="green";
+			document.getElementById("card15").style.fontSize="15px";
+			document.getElementById("card15").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card15").innerHTML = "Backup";
+			document.getElementById("card15").style.background="lightblue";
+			document.getElementById("card15").style.fontSize="20px";
+			document.getElementById("card15").style.fontWeight="bold";
+			counter=0;
+			}
+        }
+            function flashcard16(){
+                if (counter==0){
+			document.getElementById("card16").innerHTML = "The legal right of the owner of intellectual property"; 
+			document.getElementById("card16").style.background="green";
+			document.getElementById("card16").style.fontSize="15px";
+			document.getElementById("card16").style.fontWeight="normal";
+			counter=1;
+			}
+		else{
+			document.getElementById("card16").innerHTML = "Copyright";
+			document.getElementById("card16").style.background="lightblue";
+			document.getElementById("card16").style.fontSize="20px";
+			document.getElementById("card16").style.fontWeight="bold";
+			counter=0;
+			}
+        }
+       
+     </script>
+    </body>
+    
+</html>

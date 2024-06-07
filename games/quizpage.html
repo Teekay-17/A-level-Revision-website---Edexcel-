@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .questions{
+            background-color: black;
+            color: white;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+           
+            text-align: left;
+            clear: both;
+        }
+        table{
+            float: left;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 20px;
+        }
+        td{
+            width:400px ;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>My I.T Quiz Game</h1>
+    <p></p>Answer the following questions:</p>
+</div>
+
+<div class="questions">
+    What is the selector tag for general sibling?
+</div>
+
+<div>
+    <table>
+    <tr style="background-color: orange;">
+        <td > mn </td>
+        <td onclick="checkAnswer()"> + </td>
+        <td > as </td>
+        <td > # </td>
+    </tr>
+    </table>
+</div>
+
+
+
+
+<script>
+ var score = 0;
+ var gameAnswer = "+";
+ var userAnswer = null;
+
+// Function to ask a question and check the answer
+function checkAnswer() {
+    if(userAnswer !== null){
+        if(userAnswer === gameAnswer)
+        {document.getElementsByTagName("td").style.backgroundColor ="green"}
+    }
+
+    else{
+        document.getElementsByTagName("td").innerHTML="wrong"
+    }
+    
+}
+
+
+ 
+
+
+   
+</script>
+
+</body>
+</html>

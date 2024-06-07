@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .box {
+    width: 600px;
+    height: 200px;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+  }
+  .green {
+    background-color: green;
+    color: white;
+    float: left;
+  }
+  .yellow {
+    background-color: yellow;
+    color: black;
+    float: left;
+  }
+  .blue {
+    background-color: blue;
+    color: white;
+    float: left;
+  }
+  .pink {
+    background-color: pink;
+    color: black;
+    float: left;
+  }
+  
+  
+</style>
+<script>
+  function getStarted() {
+    
+    let subjects = new Array(4);
+    
+    for (let i = 0; i < 4; i++) {
+      subjects[i] = prompt("Enter your " + (i + 1) + "th favorite subject:");
+    }
+ 
+    let greenBox = document.getElementById("green");
+    greenBox.innerHTML = "In alphabetical order: " + subjects.sort().toString(", ");
+ 
+    let yellowBox = document.getElementById("yellow");
+    yellowBox.innerHTML = "Least favorite subjects: " + subjects.slice(0, 2).toString(", ");
+   
+    let blueBox = document.getElementById("blue");
+    blueBox.innerHTML = "Favorite subjects: " + subjects.slice(2, 4).toString(", ");
+   
+    let pinkBox = document.getElementById("pink");
+    subjects.push("PSHE");
+    pinkBox.innerHTML = "All subjects: " + subjects.toString(", ");
+  }
+</script>
+</head>
+<body>
+  <div class="box green" id="green"></div>
+  <div class="box yellow" id="yellow"></div>
+  <div class="box blue" id="blue"></div>
+  <div class="box pink" id="pink"></div>
+  <button  onclick="getStarted()">Get started</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var wordLetters=["R","O","C","K"];
+            var guessedLetters=["_","_","_","_"];
+            var goodGuess= false;
+            var badGuess = false;
+
+            function guessLetter(letter){
+                for(i=0; i<wordLetters.length;i++){
+                    if(wordLetters[i]==letter){
+                        guessedLetters[i]=letter;
+                        goodGuess=true;
+                    }
+
+                    if( guessedLetters[i]=="_"){
+                        badGuess= true;
+                    }
+
+                    if(goodGuess){
+                        document.write("WOW you found a letter")
+                        document.write()
+                    }
+                }
+
+            }
+        </script>
+    </body>
+</html>

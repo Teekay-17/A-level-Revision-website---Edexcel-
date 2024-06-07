@@ -1,0 +1,138 @@
+nav{
+    background-color: rgb(74, 74, 74);
+    height: 50px;
+    color: white;
+}
+
+body{
+	font: 15px Arial, sans-serif;
+}
+.navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+.navilist {
+  float: left;
+}
+
+.navilist a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navilist a:hover {
+  background-color: #111;
+}
+
+.theory{
+    height: 600px;
+    width: 500px;
+    background-color: antiquewhite;
+    float: left;
+}
+
+.practical{
+    height: 600px;
+    width: 500px;
+    background-color: antiquewhite;
+    float: left;
+    margin-left: 20px ;
+}
+
+.blueflashcard{
+  width:200px;
+  height:120px;
+  background-color:lightblue;
+  margin:10px;
+  display:inline-block;
+  text-align:center;
+  font-weight: bold;
+  font-size:20px;
+  box-shadow: 10px 10px;
+  border-radius:10px;
+  padding-top:80px;
+}
+
+  .pinkflashcard{
+    width:200px;
+    height:120px;
+    background-color:lightpink;
+    margin:10px;
+   display: inline-block;
+    text-align:center;
+    font-weight: bold;
+    font-size:20px;
+    box-shadow: 10px 10px;
+    border-radius:10px;
+    padding-top:80px;
+  
+}
+
+    .form1{
+      background-color: bisque;
+      width: 600px;
+      height: 500px;
+      text-align:center;
+      padding: 10px;
+      box-shadow: 10px 10px;
+      border-radius:10px;
+      
+    }
+
+    #displayBox{
+      background-color: rgb(206, 202, 202);
+      width: 600px;
+      height: 250px;
+      text-align:center;
+      
+      box-shadow: 10px 10px;
+      border-radius:10px;
+      padding: 10px;
+      
+    }
+
+    
+    
+
+    #fnameError{
+      width: 200px;
+      height: 20px;
+     
+    }
+
+    #ageError{
+      width: 200px;
+      height: 20px;
+      
+    }
+
+    #commentError{
+      width: 200px;
+      height: 20px;
+     
+    }
+
+    label{
+      margin-right: 0px;
+      float: left;
+    }
+    
+    button{
+      position: relative;
+      right: 0px ;
+    }
+   
+    
+      
+   
+    .art2{
+      float: left;
+      
+    }
